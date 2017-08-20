@@ -1,0 +1,129 @@
+body { margin:0; padding:0; }
+
+#map { position:absolute; top:0; bottom:0; width:100%; }
+
+#menu {
+        position: absolute;
+        background: #fff;
+        padding: 10px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+ #toggle_menu {
+        background: #fff;
+        position: absolute;
+        z-index: 1;
+        top: 50px;
+        right: 10px;
+        border-radius: 3px;
+        width: 120px;
+        border: 1px solid rgba(0,0,0,0.4);
+        font-family: 'Open Sans', sans-serif;
+    }
+
+#toggle_menu a {
+        font-size: 13px;
+        color: #404040;
+        display: block;
+        margin: 0;
+        padding: 0;
+        padding: 10px;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0,0,0,0.25);
+        text-align: center;
+    }
+
+ #toggle_menu a:last-child {
+        border: none;
+    }
+
+    #toggle_menu a:hover {
+        background-color: #f8f8f8;
+        color: #404040;
+    }
+
+    #toggle_menu a.active {
+        background-color: #3887be;
+        color: #ffffff;
+    }
+
+    #toggle_menu a.active:hover {
+        background: #3074a4;
+    }
+
+.mapboxgl-popup {
+        max-width: 400px;
+        font: 12px 'Open Sans', sans-serif;
+    }
+
+.switch-sport {
+    position: absolute;
+    top: 250px;
+    right: 10px;
+}
+
+.switch-TR {
+    position: absolute;
+    top: 280px;
+    right: 10px;
+}
+
+.switch-boulder {
+    position: absolute;
+    top: 310px;
+    right: 10px;
+}
+
+.switch-trad {
+    position: absolute;
+    top: 340px;
+    right: 10px;
+}
+
+.switch {
+  flex-shrink: 0;
+  position: relative;
+  width: 30px;
+  height: 18px;
+  border-radius: 9999px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: currentColor;
+  color: var(--default-secondary-interactive-color);
+  transition: color var(--transition),
+    background-color var(--transition),
+    border-color var(--transition);
+}
+
+.switch::after {
+  content: '';
+  background-color: currentColor;
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  width: calc(50% - 3px);
+  left: 2px;
+  top: 2px;
+  bottom: 2px;
+  transition: left var(--transition), background-color var(--transition);
+}
+
+.switch-label-sport {
+    text-align: center;
+    font-weight: bold;
+}
+
+.switch-label-TR {
+    text-align: center;
+    font-weight: bold;
+}
+
+.switch-label-boulder {
+    text-align: center;
+    font-weight: bold;
+}
+
+.switch-label-trad {
+    text-align: center;
+    font-weight: bold;
+}

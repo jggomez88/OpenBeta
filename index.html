@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OpenBeta</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.js'></script>
+<script async defer src="https://api.mapbox.com/mapbox-assembly/v0.16.0/assembly.js"></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet' />
+<link href="https://api.mapbox.com/mapbox-assembly/v0.16.0/assembly.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+    
+
+</head>
+
+<body>
+<div id='map'></div>
+<div id='menu'>
+    <input id='outdoors', type='radio', name='rtoggle', value='outdoors', checked='checked'>
+    <label for='outdoors'>outdoor</label>
+    <input id='satellite-streets', type='radio', name='rtoggle', value='satellite-streets'>
+    <label for='satellite-streets'>satellite</label>
+</div>
+<div id='toggle_menu'></div>
+
+<div class= 'switch-sport'>   
+    <label class='switch-container'>
+        <input type='checkbox' />
+        <div class='switch switch--red mr6'></div>
+        <h3 class='switch-label-sport'>Sport</h3>
+    </label>
+</div>
+    
+<div class= 'switch-TR'>    
+    <label class='switch-container'>
+        <input type='checkbox' />
+        <div class='switch switch--purple mr6'></div>
+        <h3 class='switch-label-TR'>TR</h3>
+    </label>
+</div>
+    
+<div class= 'switch-boulder'>    
+    <label class='switch-container'>
+        <input type='checkbox' />
+        <div class='switch switch--blue mr6'></div>
+        <h3 class='switch-label-boulder'>Boulder</h3>
+    </label>
+</div>
+    
+<div class= 'switch-trad'>    
+    <label class='switch-container'>
+        <input type='checkbox' />
+        <div class='switch switch--yellow mr6'></div>
+        <h3 class='switch-label-trad'>Trad</h3>
+    </label>
+</div>
+    
+<script src='js/main.js'></script>
+</body>
+</html>

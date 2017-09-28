@@ -16,9 +16,10 @@ body { margin:0; padding:0; }
         top: 50px;
         right: 10px;
         border-radius: 3px;
-        width: 120px;
+        width: 130px;
         border: 1px solid rgba(0,0,0,0.4);
         font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
     }
 
 #toggle_menu a {
@@ -56,33 +57,20 @@ body { margin:0; padding:0; }
         font: 12px 'Open Sans', sans-serif;
     }
 
-.switch-sport {
+#type_menu {
     position: absolute;
-    top: 250px;
+    top: 200px;
     right: 10px;
 }
 
-.switch-TR {
-    position: absolute;
-    top: 280px;
-    right: 10px;
-}
-
-.switch-boulder {
-    position: absolute;
-    top: 310px;
-    right: 10px;
-}
-
-.switch-trad {
-    position: absolute;
-    top: 340px;
-    right: 10px;
+.switch-container {
+    display: -webkit-box;
 }
 
 .switch {
   flex-shrink: 0;
   position: relative;
+  display: block;
   width: 30px;
   height: 18px;
   border-radius: 9999px;
@@ -97,9 +85,9 @@ body { margin:0; padding:0; }
 
 .switch::after {
   content: '';
+  display: block;
   background-color: currentColor;
   position: absolute;
-  display: block;
   border-radius: 50%;
   width: calc(50% - 3px);
   left: 2px;
@@ -108,22 +96,6 @@ body { margin:0; padding:0; }
   transition: left var(--transition), background-color var(--transition);
 }
 
-.switch-label-sport {
-    text-align: center;
-    font-weight: bold;
-}
-
-.switch-label-TR {
-    text-align: center;
-    font-weight: bold;
-}
-
-.switch-label-boulder {
-    text-align: center;
-    font-weight: bold;
-}
-
-.switch-label-trad {
-    text-align: center;
-    font-weight: bold;
+.switch-sport {
+    --webkit-text-fill-color: darkred;
 }

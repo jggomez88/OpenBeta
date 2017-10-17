@@ -145,14 +145,17 @@ map.addControl(new mapboxgl.GeolocateControl());
         map.getCanvas().style.cursor = '';
     });
 
-//assign function to onclick proprty of checkbox for climb_type menu
-var climb_type_menu = document.getElementById('type_menu');
-var type_menu_switches = climb_type_menu.document.getElementsByTagName('input');
+//assign function to onchange proprty of checkbox for climb_type menu
+toggle_climb_types = ['sport', 'trad','boulder', 'top-rope']
 
-for (var i=0, len=type_menu_switches.length; i<len; i++){
-    if ( type_menu_switches[i].type === 'checkbox') {
-        type_menu_switches[i].onclick = function() {
-            
-        }
+for (var i = 0; i < toggle_climb_types.length; i++) {
+    var id_type = toggle_climb_types[i];
+    var switch_type = document.getElementById(id_type);
+    switch_type.onchange = function(){
+        if (switch_type.checked = true) {
+        map.setFilter('Climbing Routes', ['==', 'climb_type', id_type])
+    } else {
+        map.setFilter('Climbing Routes', [null])
     }
-}
+}};
+  

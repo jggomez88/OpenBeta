@@ -95,7 +95,3 @@ body { margin:0; padding:0; }
   bottom: 2px;
   transition: left var(--transition), background-color var(--transition);
 }
-
-.switch-sport {
-    --webkit-text-fill-color: darkred;
-}
